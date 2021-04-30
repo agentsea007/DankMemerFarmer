@@ -16,7 +16,7 @@ client.on('ready', async () => {
   const channel = client.channels.get(id);
 
   if (!channel) {
-    console.log('Invalid Channel ID! Make sure to fill out config.json before running this!');
+    console.log(clc.red('> Invalid Channel ID! Make sure to fill out config.json before running this!'));
 
     return setTimeout(process.exit, 2000);
   };
@@ -41,17 +41,17 @@ client.on('ready', async () => {
   }, 60000);
 
   
-  console.log('██████╗░░█████╗░███╗░░██╗██╗░░██╗  ███████╗░█████╗░██████╗░███╗░░░███╗███████╗██████╗░')
-  console.log('██╔══██╗██╔══██╗████╗░██║██║░██╔╝  ██╔════╝██╔══██╗██╔══██╗████╗░████║██╔════╝██╔══██╗')
-  console.log('██║░░██║███████║██╔██╗██║█████═╝░  █████╗░░███████║██████╔╝██╔████╔██║█████╗░░██████╔╝')
-  console.log('██║░░██║██╔══██║██║╚████║██╔═██╗░  ██╔══╝░░██╔══██║██╔══██╗██║╚██╔╝██║██╔══╝░░██╔══██╗')
-  console.log('██████╔╝██║░░██║██║░╚███║██║░╚██╗  ██║░░░░░██║░░██║██║░░██║██║░╚═╝░██║███████╗██║░░██║')
-  console.log('╚═════╝░╚═╝░░╚═╝╚═╝░░╚══╝╚═╝░░╚═╝  ╚═╝░░░░░╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░░░░╚═╝╚══════╝╚═╝░░╚═╝')
-  console.log("—————————————————————————————————————————————————————————————————————————————————————————")
-  console.log("[-] Thanks for using Misspoken's Dank Memer Farm!")
-  console.log("[-] If you like it, maybe leave a star and follow?")
-  console.log("[-] It would help a lot considering I am making more!")
-  console.log("—————————————————————————————————————————————————————————————————————————————————————————")
+  console.log(clc.red('██████╗░░█████╗░███╗░░██╗██╗░░██╗  ███████╗░█████╗░██████╗░███╗░░░███╗███████╗██████╗░'))
+  console.log(clc.green('██╔══██╗██╔══██╗████╗░██║██║░██╔╝  ██╔════╝██╔══██╗██╔══██╗████╗░████║██╔════╝██╔══██╗'))
+  console.log(clc.red('██║░░██║███████║██╔██╗██║█████═╝░  █████╗░░███████║██████╔╝██╔████╔██║█████╗░░██████╔╝'))
+  console.log(clc.green('██║░░██║██╔══██║██║╚████║██╔═██╗░  ██╔══╝░░██╔══██║██╔══██╗██║╚██╔╝██║██╔══╝░░██╔══██╗'))
+  console.log(clc.red('██████╔╝██║░░██║██║░╚███║██║░╚██╗  ██║░░░░░██║░░██║██║░░██║██║░╚═╝░██║███████╗██║░░██║'))
+  console.log(clc.green('╚═════╝░╚═╝░░╚═╝╚═╝░░╚══╝╚═╝░░╚═╝  ╚═╝░░░░░╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░░░░╚═╝╚══════╝╚═╝░░╚═╝'))
+  console.log(clc.red("—————————————————————————————————————————————————————————————————————————————————————————"))
+  console.log(clc.green("[-] Thanks for using Misspoken's Dank Memer Farm!")
+  console.log(clc.green("[-] If you like it, maybe leave a star and follow?")
+  console.log(clc.green("[-] It would help a lot considering I am making more!")
+  console.log(clc.red("—————————————————————————————————————————————————————————————————————————————————————————"));
 });
 
 client.on('message', async message => {
