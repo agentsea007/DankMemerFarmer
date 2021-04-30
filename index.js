@@ -5,7 +5,7 @@ const PLACES = ['sewer','air', 'attic', 'bed', 'bushes', 'bus', 'coat', 'couch',
 const MEMES = 'frick'.split('');
 const ID = '270904126974590976';
 
-const { 'channel-id': id, token } = require('./config.json');
+const { 'Channel_ID': id, token } = require('./config.json');
 
 const random = (array = []) => {
   return array[Math.floor(Math.random() * array.length)];
@@ -15,7 +15,7 @@ client.on('ready', async () => {
   const channel = client.channels.get(id);
 
   if (!channel) {
-    console.log('Invalid Channel ID');
+    console.log('Invalid Channel ID! Make sure to fill out config.json before running this!');
 
     return setTimeout(process.exit, 2000);
   };
