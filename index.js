@@ -48,9 +48,9 @@ client.on('ready', async () => {
   console.log(clc.red('██████╔╝██║░░██║██║░╚███║██║░╚██╗  ██║░░░░░██║░░██║██║░░██║██║░╚═╝░██║███████╗██║░░██║'))
   console.log(clc.green('╚═════╝░╚═╝░░╚═╝╚═╝░░╚══╝╚═╝░░╚═╝  ╚═╝░░░░░╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░░░░╚═╝╚══════╝╚═╝░░╚═╝'))
   console.log(clc.red("—————————————————————————————————————————————————————————————————————————————————————————"))
-  console.log(clc.green("[-] Thanks for using Misspoken's Dank Memer Farm!")
-  console.log(clc.green("[-] If you like it, maybe leave a star and follow?")
-  console.log(clc.green("[-] It would help a lot considering I am making more!")
+  console.log(clc.green("[-] Thanks for using Misspoken's Dank Memer Farm!"))
+  console.log(clc.green("[-] If you like it, maybe leave a star and follow?"))
+  console.log(clc.green("[-] It would help a lot considering I am making more!"))
   console.log(clc.red("—————————————————————————————————————————————————————————————————————————————————————————"));
 });
 
